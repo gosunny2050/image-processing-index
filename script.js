@@ -61,8 +61,9 @@ async function fetchRepos() {
     </html>
     `;
 
-    // 写入到 index.html 文件
-    fs.writeFileSync('index.html', htmlContent, 'utf8');
+    // 写入到 index.html 文�
+    const outputPath = path.join(distDir, 'index.html');
+    fs.writeFileSync(outputPath, htmlContent, 'utf8');
     console.log('index.html 文件已生成！');
 }
 
