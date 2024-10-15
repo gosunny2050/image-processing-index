@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-	    "build": "node script.js"
+    "build": "node script.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gosunny2050/image-processing-index/issues"
   },
-  "homepage": "https://github.com/gosunny2050/image-processing-index#readme"
+  "homepage": "https://github.com/gosunny2050/image-processing-index#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
