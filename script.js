@@ -1,9 +1,18 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
+const path = require('path');
 
 // 定义每页获取的数量和总页数
 const perPage = 30;  // 每页30个结果
 const totalPages = 5;  // 总共抓取5页
+
+
+// 创建 dist 目录（如果不存在）
+const distDir = path.join(__dirname, 'dist');
+if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir);
+}
+
 
 // 获取 GitHub 图像处理相关仓库，分页处理
 async function fetchRepos() {
